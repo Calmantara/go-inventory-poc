@@ -5,6 +5,7 @@ go 1.18
 require (
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-co-op/gocron v1.13.0
+	github.com/go-playground/assert/v2 v2.0.1
 	github.com/google/uuid v1.3.0
 	go.uber.org/zap v1.21.0
 )

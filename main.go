@@ -17,7 +17,7 @@ import (
 )
 
 func main() {
-	// enable auto update
+	//is enable for auto update
 	isEnable := true
 
 	// initiate router, logger, and other configs
