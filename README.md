@@ -48,4 +48,11 @@ in term of tracing, if we are talking about distributed tracing, I can suggest t
 
 ### Misc <a name = "misc"></a>
 
-for auto update price, `isEnable` param in `main.go` file must be true. If it is enabled, it will be update the price od stocks automatically every 15 seconds
+for auto update price, `isEnable` param in `main.go` file must be true. If it is enabled, it will be update the price od stocks automatically every 15 seconds (Done)
+
+for role (under development), we can create relation between role, method, and url that can access by specific role. after that, we can create middleware and put it in controller before main executed handler
+
+for batch upload, we can use CSV parser. of course this will be needed severals additional methods:
+
+- csv uploader endpoint
+- read and parse csv service
