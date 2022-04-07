@@ -1,11 +1,12 @@
-package router
+package ginrouter
 
 import (
+	ginroutergroup "github.com/Calmantara/go-inventory-poc/configuration/gin-router-group"
 	"github.com/gin-gonic/gin"
 )
 
 type Router interface {
-	GROUP(groupPath string, handlers ...gin.HandlerFunc)
+	GROUP(groupPath string, handlers ...gin.HandlerFunc) ginroutergroup.RouterGroup
 	USE(middleware ...gin.HandlerFunc)
 
 	GET(path string, handler ...gin.HandlerFunc)
@@ -13,5 +14,5 @@ type Router interface {
 	PUT(path string, handler ...gin.HandlerFunc)
 	// DELETE(path string, handler ...gin.HandlerFunc)
 
-	SERVE(port string)
+	SERVE(ops ...Option)
 }

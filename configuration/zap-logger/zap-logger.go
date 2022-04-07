@@ -18,9 +18,9 @@ func NewWrappedZapLogger(ops ...Option) *zap.SugaredLogger {
 		Level:             zap.NewAtomicLevelAt(zap.DebugLevel),
 		OutputPaths:       []string{"stderr"},
 		Development:       false,
-		DisableStacktrace: true,
+		DisableStacktrace: false,
 		EncoderConfig: zapcore.EncoderConfig{
-			TimeKey:        "",
+			TimeKey:        "ts",
 			LevelKey:       "level",
 			NameKey:        "logger",
 			CallerKey:      "caller",
